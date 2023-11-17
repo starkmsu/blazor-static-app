@@ -1,0 +1,13 @@
+trigger:
+- main
+
+pool:
+  name: default
+
+steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'conn1'
+    scriptType: 'batch'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az account show'
