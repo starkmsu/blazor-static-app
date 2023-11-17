@@ -10,7 +10,7 @@ pool:
 steps:
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'conn1'
+    azureSubscription: 'snesterov-wif-manual'
     scriptType: 'batch'
     scriptLocation: 'inlineScript'
     inlineScript: 'az account show'
