@@ -1,0 +1,16 @@
+pr:
+  autoCancel: false
+  branches:
+    include:
+    - '*'
+
+pool:
+  name: default
+
+steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'sp-manual'
+    scriptType: 'batch'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az account show'
