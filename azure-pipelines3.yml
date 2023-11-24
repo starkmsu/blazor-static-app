@@ -10,7 +10,7 @@ pool:
 steps:
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'sp-manual'
+    azureSubscription: 'wif-manual'
     scriptType: 'batch'
     scriptLocation: 'inlineScript'
     inlineScript: 'az account show'
